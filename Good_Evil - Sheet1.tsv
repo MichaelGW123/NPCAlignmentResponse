@@ -1,0 +1,461 @@
+Input	Good
+good	1
+fine	1
+virtuous	1
+righteous	1
+moral	1
+morally correct	1
+ethical	1
+upright	1
+upstanding	1
+high-minded	1
+right-minded	1
+right-thinking	1
+principled	1
+exemplary	1
+clean	1
+law-abiding	1
+lawful	1
+irreproachable	1
+blameless	1
+guiltless	1
+unimpeachable	1
+just	1
+honest	1
+honourable	1
+honorable	1
+unbribable	1
+incorruptible	1
+anti-corruption	1
+scrupulous	1
+reputable	1
+decent	1
+respectable	1
+noble	1
+lofty	1
+elevated	1
+worthy	1
+trustworthy	1
+meritorious	1
+praiseworthy	1
+commendable	1
+admirable	1
+laudable	1
+pure	1
+sinless	1
+saintly	1
+saintlike	1
+godly	1
+angelic	1
+well behaved	1
+obedient	1
+dutiful	1
+well mannered	1
+well brought up	1
+polite	1
+civil	1
+courteous	1
+respectful	1
+deferential	1
+manageable	1
+compliant	1
+acquiescent	1
+tractable	1
+malleable	1
+right	1
+correct	1
+proper	1
+decorous	1
+seemly	1
+appropriate	1
+fitting	1
+apt	1
+suitable	1
+convenient	1
+expedient	1
+favourable	1
+favorable	1
+auspicious	1
+propitious	1
+opportune	1
+felicitous	1
+timely	1
+well judged	1
+well timed	1
+reliable	1
+dependable	1
+"true"	1
+faithful	1
+devoted	1
+steady	1
+steadfast	1
+staunch	1
+unswerving	1
+unwavering	1
+constant	1
+loyal	1
+trusty	1
+dutiful	1
+dedicated	1
+commited	1
+unfailing	1
+kind	1
+kindly	1
+kind-hearted	1
+good-hearted	1
+friendly	1
+obliging	1
+generous	1
+charitable	1
+magnanimous	1
+gracious	1
+sympathetic	1
+benevolent	1
+benign	1
+altruistic	1
+unselfish	1
+selfless	1
+appropriate	1
+agreeable	1
+wholesome	1
+genuine	1
+authentic	1
+legitimate	1
+not bad	1
+not dreadful	1
+not awful	1
+not terrible	1
+not abominable	1
+not frightful	1
+not atrocious	1
+not disgraceful	1
+not deplorable	1
+not hopeless	1
+not worthless	1
+not laughable	1
+not lamentable	1
+not miserable	1
+not diabolical	1
+not harmful	1
+not damaging	1
+not detrimental	1
+not undesirable	1
+not injurious	1
+not hurtful	1
+not inimical	1
+not dangerous	1
+not destructive	1
+not ruinous	1
+not deleterious	1
+not unhealthy	1
+not unwholesome	1
+not wicked	1
+not sinful	1
+not immoral	1
+not evil	1
+not morally wrong	1
+not corrupt	1
+not base	1
+not black-hearted	1
+not reprobate	1
+not depraved	1
+not degenerate	1
+not dissolute	1
+not amoral	1
+not crimial 	1
+not villainous	1
+not nefarious	1
+not iniquitous	1
+not dishonest	1
+not dishonourable	1
+not unscrupulous	1
+not unprincipled	1
+not naughty	1
+not badly behaved	1
+not disobedient	1
+not wayward	1
+not wilful	1
+not self-willled	1
+not defiant	1
+not unruly	1
+not insubordinate	1
+not undisciplined	1
+not unmanageable	1
+not uncontrollable	1
+not ungovernable	1
+not unbiddable	1
+not disruptive	1
+not rebellious	1
+not refractory	1
+not recalcitrant	1
+not mischievous	1
+not impish	1
+not roguish	1
+not rascally	1
+not puckish	1
+not prankish	1
+not tricksy	1
+not unpleasant	1
+not disagreeable	1
+not unwelcome	1
+not unfortunate	1
+not unfavourable	1
+not unfavorable	1
+not adverse	1
+not nasty	1
+not terrible	1
+not dreadful	1
+not awful	1
+not grim	1
+not distressing	1
+not wrong	1
+not wrongful	1
+not ungodly	1
+not unholy	1
+not foul	1
+not vile	1
+not ignoble	1
+not vicious	1
+not malicious	1
+not malevolent	1
+not demonic	1
+not devilish	1
+not diabolic	1
+not fiendish	1
+not despicable	1
+not heinous	1
+not odious	1
+not contemptible	1
+not horrible	1
+not execrable	1
+not subversive	1
+bad	0
+dreadful	0
+awful	0
+terrible	0
+abominable	0
+frightful	0
+atrocious	0
+disgraceful	0
+deplorable	0
+hopeless	0
+worthless	0
+laughable	0
+lamentable	0
+miserable	0
+diabolical	0
+harmful	0
+damaging	0
+detrimental	0
+undesirable	0
+injurious	0
+hurtful	0
+inimical	0
+dangerous	0
+destructive	0
+ruinous	0
+deleterious	0
+unhealthy	0
+unwholesome	0
+wicked	0
+sinful	0
+immoral	0
+evil	0
+morally wrong	0
+corrupt	0
+base	0
+black-hearted	0
+reprobate	0
+depraved	0
+degenerate	0
+dissolute	0
+amoral	0
+crimial 	0
+villainous	0
+nefarious	0
+iniquitous	0
+dishonest	0
+dishonourable	0
+unscrupulous	0
+unprincipled	0
+naughty	0
+badly behaved	0
+disobedient	0
+wayward	0
+wilful	0
+self-willled	0
+defiant	0
+unruly	0
+insubordinate	0
+undisciplined	0
+unmanageable	0
+uncontrollable	0
+ungovernable	0
+unbiddable	0
+disruptive	0
+rebellious	0
+refractory	0
+recalcitrant	0
+mischievous	0
+impish	0
+roguish	0
+rascally	0
+puckish	0
+prankish	0
+tricksy	0
+unpleasant	0
+disagreeable	0
+unwelcome	0
+unfortunate	0
+unfavourable	0
+unfavorable	0
+adverse	0
+nasty	0
+terrible	0
+dreadful	0
+awful	0
+grim	0
+distressing	0
+wrong	0
+wrongful	0
+ungodly	0
+unholy	0
+foul	0
+vile	0
+ignoble	0
+vicious	0
+malicious	0
+malevolent	0
+demonic	0
+devilish	0
+diabolic	0
+fiendish	0
+despicable	0
+heinous	0
+odious	0
+contemptible	0
+horrible	0
+execrable	0
+subversive	0
+not good	0
+not fine	0
+not virtuous	0
+not righteous	0
+not moral	0
+not morally correct	0
+not ethical	0
+not upright	0
+not upstanding	0
+not high-minded	0
+not right-minded	0
+not right-thinking	0
+not principled	0
+not exemplary	0
+not clean	0
+not law-abiding	0
+not lawful	0
+not irreproachable	0
+not blameless	0
+not guiltless	0
+not unimpeachable	0
+not just	0
+not honest	0
+not honourable	0
+not honorable	0
+not unbribable	0
+not incorruptible	0
+not anti-corruption	0
+not scrupulous	0
+not reputable	0
+not decent	0
+not respectable	0
+not noble	0
+not lofty	0
+not elevated	0
+not worthy	0
+not trustworthy	0
+not meritorious	0
+not praiseworthy	0
+not commendable	0
+not admirable	0
+not laudable	0
+not pure	0
+not sinless	0
+not saintly	0
+not saintlike	0
+not godly	0
+not angelic	0
+not well behaved	0
+not obedient	0
+not dutiful	0
+not well mannered	0
+not well brought up	0
+not polite	0
+not civil	0
+not courteous	0
+not respectful	0
+not deferential	0
+not manageable	0
+not compliant	0
+not acquiescent	0
+not tractable	0
+not malleable	0
+not right	0
+not correct	0
+not proper	0
+not decorous	0
+not seemly	0
+not appropriate	0
+not fitting	0
+not apt	0
+not suitable	0
+not convenient	0
+not expedient	0
+not favourable	0
+not favorable	0
+not auspicious	0
+not propitious	0
+not opportune	0
+not felicitous	0
+not timely	0
+not well judged	0
+not well timed	0
+not reliable	0
+not dependable	0
+not "true"	0
+not faithful	0
+not devoted	0
+not steady	0
+not steadfast	0
+not staunch	0
+not unswerving	0
+not unwavering	0
+not constant	0
+not loyal	0
+not trusty	0
+not dutiful	0
+not dedicated	0
+not commited	0
+not unfailing	0
+not kind	0
+not kindly	0
+not kind-hearted	0
+not good-hearted	0
+not friendly	0
+not obliging	0
+not generous	0
+not charitable	0
+not magnanimous	0
+not gracious	0
+not sympathetic	0
+not benevolent	0
+not benign	0
+not altruistic	0
+not unselfish	0
+not selfless	0
+not appropriate	0
+not agreeable	0
+not wholesome	0
+not genuine	0
+not authentic	0
+not legitimate	0

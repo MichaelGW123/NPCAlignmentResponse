@@ -11,7 +11,8 @@ import pandas as pd
 from pathlib import Path
 
 # Importing the dataset
-path = Path(__file__).parent / 'Good_Bad - Sheet1.tsv'
+path = Path(__file__).parent / 'Good_Evil - Sheet1.tsv' 
+# Use Good_Evil V2 to recreate Part 2 Submission graphs
 dataset = pd.read_csv(path, delimiter = '\t', quoting = 3)
 #processes tsv files, and ignores double quotes (")
 
@@ -33,58 +34,60 @@ for i in range(0, len(dataset.index)):
     # Currently commented out, because it messed with some of the words
     textinput = ' '.join(textinput)
     corpus.append(textinput)
-print(corpus)
+#print(corpus)
 
 # Creating the Bag of Words model
 from sklearn.feature_extraction.text import CountVectorizer
-cv = CountVectorizer(max_features= 1500)
+cv = CountVectorizer(max_features= 130)
 X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:, -1].values
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state=0)
 
 #Training the Classifier Model on the Training Set
+choice = 3
 
-# Logistic Regression model
-# from sklearn.linear_model import LogisticRegression
-# classifier = LogisticRegression(random_state=0)
-# classifier.fit(X_train, y_train)
-
-# KNN model
-# from sklearn.neighbors import KNeighborsClassifier
-# classifier = KNeighborsClassifier()
-# classifier.fit(X_train, y_train)
-
-# SVM model
-from sklearn.svm import SVC
-classifier = SVC(kernel='linear', random_state=0)
-classifier.fit(X_train, y_train)
-
-# Kernal SVM model
-# from sklearn.svm import SVC
-# classifier = SVC(kernel='rbf', random_state=0)
-# classifier.fit(X_train, y_train)
-
-# Naive Bayes model
-# from sklearn.naive_bayes import GaussianNB
-# classifier = GaussianNB()
-# classifier.fit(X_train, y_train)
-
-# Decision Tree model
-# from sklearn.tree import DecisionTreeClassifier
-# classifier = DecisionTreeClassifier(criterion="entropy", random_state= 0)
-# classifier.fit(X_train, y_train)
-
-# Random Forest model
-# from sklearn.ensemble import RandomForestClassifier
-# classifier = RandomForestClassifier(n_estimators=10, criterion="entropy", random_state= 0)
-# classifier.fit(X_train, y_train)
+if (choice == 1):
+    # Logistic Regression model
+    from sklearn.linear_model import LogisticRegression
+    classifier = LogisticRegression()
+    classifier.fit(X_train, y_train)
+elif (choice == 2):
+    # KNN model
+    from sklearn.neighbors import KNeighborsClassifier
+    classifier = KNeighborsClassifier()
+    classifier.fit(X_train, y_train)
+elif (choice == 3):
+    # SVM model
+    from sklearn.svm import SVC
+    classifier = SVC(kernel='linear', random_state=0)
+    classifier.fit(X_train, y_train)
+elif (choice == 4):
+    # Kernal SVM model
+    from sklearn.svm import SVC
+    classifier = SVC(kernel='rbf', random_state=0)
+    classifier.fit(X_train, y_train)
+elif (choice == 5):
+    # Naive Bayes model
+    from sklearn.naive_bayes import GaussianNB
+    classifier = GaussianNB()
+    classifier.fit(X_train, y_train)
+elif (choice == 6):
+    # Decision Tree model
+    from sklearn.tree import DecisionTreeClassifier
+    classifier = DecisionTreeClassifier(criterion="entropy", random_state=0)
+    classifier.fit(X_train, y_train)
+elif (choice == 7):
+    # Random Forest model
+    from sklearn.ensemble import RandomForestClassifier
+    classifier = RandomForestClassifier(n_estimators=10, criterion="entropy", random_state= 0)
+    classifier.fit(X_train, y_train)
 
 # Predicting the Test set results
-#y_pred = classifier.predict(X_test)
-#print(np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test), 1)), 1))
+y_pred = classifier.predict(X_test)
+print(np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test), 1)), 1))
 
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_recall_fscore_support
