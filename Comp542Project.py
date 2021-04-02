@@ -45,9 +45,10 @@ y = dataset.iloc[:, -1].values
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state=0)
+X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size = 0.20, random_state=0)
 
 #Training the Classifier Model on the Training Set
-choice = 3
+choice = 5
 
 if (choice == 1):
     # Logistic Regression model
@@ -91,8 +92,25 @@ print(np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test)
 
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_recall_fscore_support
+
+cm = confusion_matrix(y_train, classifier.predict(X_train))
+print("\nTraining Set\nConfusion Matrix - ")
+print(cm)
+accuracy = accuracy_score(y_train, classifier.predict(X_train))
+print(f"\naccuracy - {accuracy}")
+stats = precision_recall_fscore_support(y_train, classifier.predict(X_train), average='binary')
+print(f"precision - {stats[0]}\nrecall - {stats[1]}\nf score - {stats[2]}\n")
+
+cm = confusion_matrix(y_val, classifier.predict(X_val))
+print("\nValidation Set\nConfusion Matrix - ")
+print(cm)
+accuracy = accuracy_score(y_val, classifier.predict(X_val))
+print(f"\naccuracy - {accuracy}")
+stats = precision_recall_fscore_support(y_val, classifier.predict(X_val), average='binary')
+print(f"precision - {stats[0]}\nrecall - {stats[1]}\nf score - {stats[2]}\n")
+
 cm = confusion_matrix(y_test, classifier.predict(X_test))
-print("\nConfusion Matrix - ")
+print("\nTest Set\nConfusion Matrix - ")
 print(cm)
 accuracy = accuracy_score(y_test, classifier.predict(X_test))
 print(f"\naccuracy - {accuracy}")
