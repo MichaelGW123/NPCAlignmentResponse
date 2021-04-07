@@ -30,8 +30,7 @@ for i in range(0, len(dataset.index)):
     ps = PorterStemmer()
     all_stopwards = stopwords.words('english')
     all_stopwards.remove('not')
-    #textinput = [ps.stem(word) for word in textinput if not word in set(all_stopwards)]
-    # Currently commented out, because it messed with some of the words
+    textinput = [ps.stem(word) for word in textinput if not word in set(all_stopwards)]
     textinput = ' '.join(textinput)
     corpus.append(textinput)
 #print(corpus)
@@ -48,7 +47,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, rand
 X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size = 0.20, random_state=0)
 
 #Training the Classifier Model on the Training Set
-choice = 3
+choice = 1
 
 if (choice == 1):
     # Logistic Regression model
