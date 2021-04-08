@@ -1,5 +1,6 @@
 # Juan Davalos and Michael Williamson
 # Computer Science 542 - Machine Learning
+# Good and Evil Classifier Code
 
 # Natural Language Processing
 # Sentiment Analysis
@@ -37,7 +38,7 @@ for i in range(0, len(dataset.index)):
 
 # Creating the Bag of Words model
 from sklearn.feature_extraction.text import CountVectorizer
-cv = CountVectorizer(max_features= 600)
+cv = CountVectorizer(max_features= 700)
 X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:, -1].values
 
@@ -47,7 +48,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, rand
 X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size = 0.20, random_state=0)
 
 #Training the Classifier Model on the Training Set
-choice = 1
+choice = 7
 
 if (choice == 1):
     # Logistic Regression model
