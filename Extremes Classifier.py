@@ -69,25 +69,27 @@ lc_classifier = SVC(kernel='linear', random_state=0)
 lc_classifier.fit(lc_X, lc_y)
 
 # Predicting the sentiments of a single sentence
-new_sentence = 'I am a criminal who creates chaos'
-new_sentence = re.sub('[^a-zA-Z]', ' ', new_sentence)
-new_sentence = new_sentence.lower()
-new_sentence = new_sentence.split()
-ps = PorterStemmer()
-all_stopwords = stopwords.words('english')
-all_stopwords.remove('not')
-new_sentence = [ps.stem(word) for word in new_sentence if not word in set(all_stopwords)]
-new_sentence = ' '.join(new_sentence)
-new_corpus = [new_sentence]
-new_ge_X_test = ge_cv.transform(new_corpus).toarray()
-new_ge_y_pred = ge_classifier.predict(new_ge_X_test)
-new_lc_X_test = lc_cv.transform(new_corpus).toarray()
-new_lc_y_pred = lc_classifier.predict(new_lc_X_test)
-if (new_lc_y_pred):
-    print("Lawful")
-else:
-    print("Chaotic")
-if (new_ge_y_pred):
-    print("Good")
-else:
-    print("Evil")
+new_sentence = input("Please enter a phrase (Enter Done to Finish): ")
+while new_sentence != "Done":
+    new_sentence = re.sub('[^a-zA-Z]', ' ', new_sentence)
+    new_sentence = new_sentence.lower()
+    new_sentence = new_sentence.split()
+    ps = PorterStemmer()
+    all_stopwords = stopwords.words('english')
+    all_stopwords.remove('not')
+    new_sentence = [ps.stem(word) for word in new_sentence if not word in set(all_stopwords)]
+    new_sentence = ' '.join(new_sentence)
+    new_corpus = [new_sentence]
+    new_ge_X_test = ge_cv.transform(new_corpus).toarray()
+    new_ge_y_pred = ge_classifier.predict(new_ge_X_test)
+    new_lc_X_test = lc_cv.transform(new_corpus).toarray()
+    new_lc_y_pred = lc_classifier.predict(new_lc_X_test)
+    if (new_lc_y_pred):
+        print("Lawful")
+    else:
+        print("Chaotic")
+    if (new_ge_y_pred):
+        print("Good")
+    else:
+        print("Evil")
+    new_sentence = input("Please enter a phrase (Enter Done to Finish): ")
